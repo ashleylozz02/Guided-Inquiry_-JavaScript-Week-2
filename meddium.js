@@ -21,8 +21,8 @@ let months = [
   "november",
   "December",
 ];
-if (userInput <= 11 || 0 <= -1 || 12 % 1) {
-  console.log("months[userInput]");
+if (userInput <= 11 || userInput <= 0) {
+  console.log(months[userInput-1]);
 } else {
   alert("Error, enter only numbers that are 1-12");
 }
